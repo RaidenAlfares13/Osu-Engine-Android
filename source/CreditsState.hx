@@ -49,7 +49,7 @@ class CreditsState extends MusicBeatState
 			['Idea of the name,Coder'],
 			['Raiden alfares',		    'Raiden',		    'Main Coder of The engine,Owner',	 'https://youtube.com/channel/UChE0s906J1YZRf1Ln9wP8Gg',	'0xFFC30085'],
 			['Helper'],
-			['Monika',		'sus',		'Help raiden',					'https://twitter.com/Shadow_Mario_',	'0xFFFFDD33'],
+			['Monika',		'Sus',		'Help raiden',					'https://twitter.com/Shadow_Mario_',	'0xFFFFDD33'],
 			['Meliozets',		'Dz',		'Give Idea for raiden',					'https://youtube.com/channel/UCzHhqTunXYFyI3_5gsDgJ_w',	'0xFFFFF00'],
 			
 		];
@@ -84,7 +84,7 @@ class CreditsState extends MusicBeatState
 		}
 
 		descText = new FlxText(50, 600, 1180, "", 32);
-		descText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		descText.setFormat(Paths.font("font.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		descText.scrollFactor.set();
 		descText.borderSize = 2.4;
 		add(descText);
