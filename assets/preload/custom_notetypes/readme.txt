@@ -1,0 +1,1 @@
+Add your custom note type's .parts file here
