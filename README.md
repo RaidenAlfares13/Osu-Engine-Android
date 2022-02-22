@@ -1,4 +1,4 @@
-# Friday Night Funkin' - Psych Engine
+# Friday Night Funkin' - OSU ENGINR
 Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
 ## Installation:
@@ -9,8 +9,8 @@ You can do this with: `haxelib install linc_luajit` on a Command prompt/PowerShe
 ...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
 
 ## Credits:
-* Shadow Mario - Coding
-* RiverOaken - Arts and Animations
+* Raiden alfares - Coding
+* Meliozets - Give me Idea
 
 ### Special Thanks
 * Keoiki - Note Splash Animations
