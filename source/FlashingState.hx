@@ -28,12 +28,12 @@ class FlashingState extends MusicBeatState
 			Press Enter to start!\n
 			Enjoy",
 			32);
-		warnText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
+		warnText.setFormat("FONT OSD Mono", 32, FlxColor.WHITE, CENTER);
 		warnText.screenCenter(Y);
 		add(warnText);
 
 		#if mobileC
-		addVirtualPad(NONE, A_B);
+		addVirtualPad(NONE, A);
 		#end
 	}
 
