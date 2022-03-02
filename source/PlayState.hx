@@ -43,7 +43,6 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.utils.Assets as OpenFlAssets;
 import editors.ChartingState;
-import editors.CharacterEditorState;
 import flixel.group.FlxSpriteGroup;
 import Achievements;
 import StageData;
@@ -1978,9 +1977,9 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if(ratingString == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' // Combo Breaks: ' + songMisses + ' // Accuracy: ' + ratingString;
+			scoreTxt.text = 'Score: ' + songScore + ' \\ Combo Breaks: ' + songMisses + ' \\ Accuracy: ' + ratingString;
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' // Combo Breaks: ' + songMisses + ' // Accuracy: ' + ratingString + ' (' + Math.floor(ratingPercent * 250) + '%)';
+			scoreTxt.text = 'Score: ' + songScore + ' \\ Combo Breaks: ' + songMisses + ' \\ Accuracy: ' + ratingString + ' (' + Math.floor(ratingPercent * 250) + '%)';
 		}
 
 		if(cpuControlled) {
@@ -2065,7 +2064,6 @@ class PlayState extends MusicBeatState
 			paused = true;
 			cancelFadeTween();
 			CustomFadeTransition.nextCamera = camOther;
-			MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
 		}
 
 		if (startingSong)
