@@ -42,7 +42,7 @@ class FlxVirtualPad extends FlxSpriteGroup
 		if (DPad == null)
 			DPad = FULL;
 		if (Action == null)
-			Action = A_B_C;
+			Action = A_B;
 
 		dPad = new FlxSpriteGroup();
 		dPad.scrollFactor.set();
@@ -84,15 +84,6 @@ class FlxVirtualPad extends FlxSpriteGroup
 			case A_B:
 				actions.add(add(buttonA = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "a")));
 				actions.add(add(buttonB = createButton(FlxG.width - 86 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "b")));
-			case A_B_C:
-				actions.add(add(buttonA = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "a")));
-				actions.add(add(buttonB = createButton(FlxG.width - 86 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "b")));
-                                actions.add(add(buttonC = createButton(FlxG.width - (45 * 3), FlxG.height / 2 - 45 / 2, 44 * 3, 45 * 3, "c")));	
-			case A_B_X_Y:
-				actions.add(add(buttonY = createButton(FlxG.width - 86 * 3, FlxG.height - 85 * 3, 44 * 3, 45 * 3, "y")));
-				actions.add(add(buttonX = createButton(FlxG.width - 44 * 3, FlxG.height - 85 * 3, 44 * 3, 45 * 3, "x")));					
-				actions.add(add(buttonA = createButton(FlxG.width - 44 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "a")));
-				actions.add(add(buttonB = createButton(FlxG.width - 86 * 3, FlxG.height - 45 * 3, 44 * 3, 45 * 3, "b")));	
 			case D:
 				actions.add(add(buttonDodge = createButton(FlxG.width - (45 * 3), FlxG.height / 2 - 45 / 2, 44 * 3, 45 * 3, "d")));				
 			case NONE: // do nothing
@@ -110,9 +101,6 @@ class FlxVirtualPad extends FlxSpriteGroup
 		actions = null;
 		buttonA = null;
 		buttonB = null;
-		buttonC = null;
-		buttonY = null;
-		buttonX = null;
 		buttonLeft = null;
 		buttonUp = null;
 		buttonDown = null;
@@ -170,8 +158,6 @@ enum FlxActionMode
 	NONE;
 	A;
         B;
-	A_B;
-	A_B_C;
-	A_B_X_Y;
+	 A_B;
 	D;
 }
