@@ -43,7 +43,6 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.utils.Assets as OpenFlAssets;
 import editors.ChartingState;
-import editors.CharacterEditorState;
 import flixel.group.FlxSpriteGroup;
 import Achievements;
 import StageData;
@@ -2065,7 +2064,6 @@ class PlayState extends MusicBeatState
 			paused = true;
 			cancelFadeTween();
 			CustomFadeTransition.nextCamera = camOther;
-			MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
 		}
 
 		if (startingSong)
