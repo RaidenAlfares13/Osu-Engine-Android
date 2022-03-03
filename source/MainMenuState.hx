@@ -133,7 +133,7 @@ class MainMenuState extends MusicBeatState
 		#end
 
 		#if mobileC
-		addVirtualPad(UP_DOWN, A_B_Y);
+		addVirtualPad(UP_DOWN, A_B_X_Y);
 		#end
 
 		super.create();
