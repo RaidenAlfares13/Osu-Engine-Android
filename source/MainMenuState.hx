@@ -31,7 +31,7 @@ class MainMenuState extends MusicBeatState
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 	
-	var optionShit:Array<String> = ['story_mode', 'freeplay', #if ACHIEVEMENTS_ALLOWED 'awards', #end 'credits', #if !switch 'donate', #end 'options'];
+	var optionShit:Array<String> = ['story_mode', 'freeplay', 'credits', 'options'];
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -106,7 +106,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Osu engine v" + Osu engine version, 1);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Osu engine v" + OsuengineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("FONT OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
